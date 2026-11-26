@@ -73,8 +73,10 @@ body {
   border-bottom: 1px solid var(--rule);
 }
 
-.wordmark { display: inline-flex; align-items: center; text-decoration: none; }
-.wordmark-logo { display: block; width: 124px; height: 32px; object-fit: contain; }
+.wordmark { display: inline-flex; align-items: center; gap: 8px; color: var(--purple); text-decoration: none; }
+.wordmark-mark { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 7px; background: #49329b; color: #fff; }
+.wordmark-mark svg { width: 23px; height: 23px; }
+.wordmark-name { color: #49329b; font-size: 16px; font-weight: 500; letter-spacing: -0.035em; }
 .card-index, .eyebrow, .service-number, .contact-kicker { font-size: 9px; font-weight: 700; letter-spacing: 0.16em; }
 .card-index { color: #93899d; }
 
