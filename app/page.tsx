@@ -19,11 +19,14 @@ export default function Page() {
       <section className="calling-card" aria-labelledby="brand-name">
         <header className="card-header">
           <a className="wordmark" href="https://vividdev.io" aria-label="VividDev website">
-            <span className="wordmark-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="m5.5 11.5 4.1 5L18.5 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
+            <img
+              className="wordmark-mark"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vividdev-icon-8lcB7ZkTDOyXVXvZK1DPTOjigj8ivX.png"
+              alt=""
+              width={28}
+              height={28}
+              aria-hidden="true"
+            />
             <span className="wordmark-name">VividDev</span>
           </a>
           <span className="card-index">PERSONAL CALLING CARD</span>
