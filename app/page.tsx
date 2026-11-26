@@ -36,7 +36,7 @@ export default function Page() {
           <p className="eyebrow"><span className="eyebrow-line" /> WHAT WE DO</p>
           <h1 id="brand-name">Let&apos;s make<br /><span>it vivid.</span></h1>
           <p className="intro">
-            I build websites for companies, small businesses, and anyone who needs a website. I also build AI chatbots and make your wants and needs a reality.
+            A two-person studio crafting fast, polished websites and web apps for startups, agencies, and local businesses — available worldwide.
           </p>
 
           <section className="services" aria-label="What we do">
