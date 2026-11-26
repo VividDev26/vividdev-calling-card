@@ -1,9 +1,13 @@
-import { ArrowUpRight, Bot, Globe2, Mail, Phone, Sparkles } from 'lucide-react'
+import { ArrowUpRight, Bot, Code2, Gauge, Globe2, Mail, Phone, ShoppingBag, Smartphone, Headset } from 'lucide-react'
 
 const services = [
-  { icon: Globe2, label: 'Websites for businesses and anyone who needs one' },
-  { icon: Bot, label: 'AI chatbots' },
-  { icon: Sparkles, label: 'Turning your wants and needs into reality' },
+  { icon: Code2, title: 'Web design', description: 'Custom UI from Figma to pixel-perfect code. No templates.' },
+  { icon: Globe2, title: 'Full-stack dev', description: 'Frontend, backend, APIs, databases, and deployments.' },
+  { icon: ShoppingBag, title: 'E-commerce', description: 'Custom carts, Stripe payments, and order management.' },
+  { icon: Bot, title: 'AI integrations', description: 'Custom AI chatbots and LLM-powered tools built into your product.' },
+  { icon: Gauge, title: 'Speed & SEO', description: 'Lighthouse 100. Core Web Vitals. Ranked and fast.' },
+  { icon: Smartphone, title: 'Mobile-first', description: 'Every build is responsive and tested across all screens.' },
+  { icon: Headset, title: 'Retainers', description: 'Ongoing support, updates, and new features as you grow.' },
 ]
 
 export default function Page() {
@@ -22,21 +26,22 @@ export default function Page() {
         </header>
 
         <div className="card-content">
-          <p className="eyebrow"><span className="eyebrow-line" /> YOUR IDEAS, ONLINE</p>
+          <p className="eyebrow"><span className="eyebrow-line" /> WHAT WE DO</p>
           <h1 id="brand-name">Let&apos;s make<br /><span>it vivid.</span></h1>
           <p className="intro">
             I build websites for companies, small businesses, and anyone who needs a website. I also build AI chatbots and make your wants and needs a reality.
           </p>
 
-          <div className="services" aria-label="What I do">
-            {services.map(({ icon: Icon, label }, index) => (
-              <div className="service" key={label}>
+          <section className="services" aria-label="What we do">
+            {services.map(({ icon: Icon, title, description }, index) => (
+              <article className="service" key={title}>
                 <span className="service-icon"><Icon size={17} strokeWidth={1.7} aria-hidden="true" /></span>
                 <span className="service-number">0{index + 1}</span>
-                <span className="service-label">{label}</span>
-              </div>
+                <h2 className="service-title">{title}</h2>
+                <p className="service-description">{description}</p>
+              </article>
             ))}
-          </div>
+          </section>
         </div>
 
         <footer className="card-footer">
